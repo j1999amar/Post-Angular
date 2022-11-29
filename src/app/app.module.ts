@@ -7,6 +7,7 @@ import { ViewPostComponent } from './view-post/view-post.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from "./navbar/navbar.component";
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 const myRouter:Routes=[{
   path:"",
   component:ViewPostComponent
@@ -28,7 +29,8 @@ const myRouter:Routes=[{
         BrowserModule,
         AppRoutingModule,
         RouterModule.forRoot(myRouter),
-        FormsModule
+        FormsModule,
+        HttpClientModule
     ]
 })
 export class AppModule { }
